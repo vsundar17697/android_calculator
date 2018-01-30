@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="4"
+        android:columnCount="4">
+
+        <Button
+            android:id="@+id/sin"
+            android:text="sin"
+            android:layout_columnWeight="1"
+            android:background="@color/white"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/cos"
+            android:text="cos"
+            android:layout_columnWeight="1"
+            android:background="@color/white"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/tan"
+            android:text="tan"
+            android:layout_columnWeight="1"
+            android:background="@color/white"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/log"
+            android:text="log"
+            android:layout_columnWeight="1"
+            android:background="@color/white"
+            android:textSize="20sp"/>
+
+        <TextView android:text="Add mode functions"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textAlignment="center"/>
+
+    </GridLayout>
+
+</LinearLayout>
